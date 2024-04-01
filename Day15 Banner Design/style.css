@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    background: #f1f1f1;
+    font-family: sans-serif;
+}
+.ban{
+    position: relative;
+    height: 640px;
+    overflow: hidden;
+    background: url('image/concert.jpg') no-repeat center;
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight: 500;
+    
+}
+.container h1{
+    font-size: 72px;
+    text-transform: uppercase;
+    margin: 0;
+    color: rgb(10, 43, 87);
+}
+.des{
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+    color: rgb(29, 46, 4);
+    font-weight: bold;
+    text-shadow: 0 0 5px rgb(88, 84, 84);
+}
+.btn{
+    color: #313131;
+    padding: 10px 25px;
+    font-size: 20px;
+    text-decoration: none;
+    background: #e96a6a;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.btn:hover{
+    color: #313131;
+    background-color: #e9abab;
+    transform: 0.4s;
+}

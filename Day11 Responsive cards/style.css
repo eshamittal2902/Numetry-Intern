@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    background: url('images/bg1.jpg') center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+header{
+    width: 100%;
+    background: #012f5d;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.logo img{
+    width: 170px;
+    height: 60px;
+}
+.name{
+    font-weight: bold;
+    font-size: 30px;
+    color: beige;
+    text-align: left;
+    width: 40%;
+}
+.books h2{
+    text-align: center;
+    font-style: italic;
+    color: rgb(231, 231, 122);
+    padding: 25px 0;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.items img{
+    width: 100px;
+    height: 70px;
+}
+.items{
+    flex-basis: 26%;
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 0px 5px 1px rgb(240, 238, 238);
+    background: rgb(144, 155, 237);
+}
+.items h3{
+    padding: 10px 0px;
+}
+.items p{
+    font-size: 15px;
+    padding: 10px;
+}
+.items button{
+    background: #012f5d;
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 10px 0px;
+}
+.items button:hover{
+    transition: 0.4s;
+    background: #35495f;
+    cursor: pointer;
+}
+.items:hover{
+    background:#012f5d;
+    cursor: pointer;
+}
+.items:hover h3,.items:hover p{
+    color: white;
+}
+.items:hover button{
+    background: white;
+    color: #012f5d;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .items{
+        margin: 15px;
+    }
+}
