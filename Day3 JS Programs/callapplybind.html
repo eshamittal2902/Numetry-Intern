@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call,Apply,Bind</title>
+</head>
+<body>
+    <script>
+        function hi(msg){
+            console.log(msg+" "+this.name);
+        }
+        var person={
+            name: "Jack"
+        }
+        hi.call(person,"Hello");
+        hi.apply(person,["Bye"]);
+        var say=hi.bind(person,"Goodbye");
+       say();
+    </script>
+</body>
+</html>

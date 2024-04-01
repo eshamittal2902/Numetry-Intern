@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('image/bg.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    color: beige;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.icon a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: beige;
+    font-size: 20px;
+    position: relative;
+}
+
+.icon a:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    border-bottom: 2px solid darksalmon;
+    transition: 0.4s linear;
+}
+
+.icon a:hover::before{
+    width: 90%;
+}
+
+.reg a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: beige;
+    font-size: 20px;
+    background:darksalmon;
+    border-radius: 8px;
+    transition: 0.4s linear;
+}
+
+.reg a:hover{
+    background: transparent;
+    border: 1px solid darksalmon;
+}
+
+.sec{
+    position: absolute;
+    max-width: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: beige;
+}
+
+.sec a{
+    text-decoration: none;
+    color: beige;
+    background: darksalmon;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.4s linear;
+}
+
+.sec a:hover{
+    background: transparent;
+    border: 1px solid darksalmon;
+}
+
+.sec h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 60px;
+}

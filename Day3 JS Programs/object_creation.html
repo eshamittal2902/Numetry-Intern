@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        //Using Object Literal
+        var boy1={
+            name:"Roy",
+            age:20,
+            hello:function(){
+                console.log("Hello my name is "+this.name);
+            }
+        }
+        console.log(boy1);
+        boy1.hello();
+
+        //Using Constructor Functions
+        function Boy(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        var b1=new Boy("Ricky",27);
+        console.log(b1.name);
+    </script>
+</body>
+</html>
