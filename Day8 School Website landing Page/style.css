@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.6) 90%,#7d7c7b), url('img/bgg.jpg');
+    background-size: 100% 100%;
+}
+
+.n1{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background: #0b0a0a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.n1 p{
+    font-weight: bold;
+    font-family: cursive;
+    color: beige;
+    font-size: 30px;
+}
+
+.n1 a{
+    color:white;
+    padding: 5px 20px;
+    text-decoration: none;
+    background: #7d7c7b;
+    position: relative;
+    margin-right: 40px;
+    
+}
+.n1 a:hover{
+    background: transparent;
+    border: 1px solid #7d7c7b;
+}
+
+.n2{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: beige;
+    padding: 10px 20px;
+}
+
+.htext{
+    max-width: 500px;
+    color: white;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.htext h1{
+    font-size: 3em;
+    color: rgb(112, 112, 110);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.htext span{
+    color: #f986d5;
+}
+
+.htext a{
+    text-decoration: none;
+    background: #7d7c7b;
+    padding: 10px 20px;
+    color: white;
+    margin:0px 15px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    transition: 0.4s linear;
+}
+.htext a:hover{
+    background: transparent;
+    border: 1px solid #7d7c7b;
+}
